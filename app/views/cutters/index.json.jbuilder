@@ -1,0 +1,1 @@
+json.array! @cutters, partial: 'cutters/cutter', as: :cutter

@@ -1,0 +1,1 @@
+json.partial! "cutters/cutter", cutter: @cutter

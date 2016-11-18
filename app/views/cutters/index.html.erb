@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cutters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cutters.each do |cutter| %>
+      <tr>
+        <td><%= cutter.name %></td>
+        <td><%= cutter.description %></td>
+        <td><%= link_to 'Show', cutter %></td>
+        <td><%= link_to 'Edit', edit_cutter_path(cutter) %></td>
+        <td><%= link_to 'Destroy', cutter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cutter', new_cutter_path %>

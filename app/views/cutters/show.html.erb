@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cutter.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cutter.description %>
+</p>
+
+<%= link_to 'Edit', edit_cutter_path(@cutter) %> |
+<%= link_to 'Back', cutters_path %>
